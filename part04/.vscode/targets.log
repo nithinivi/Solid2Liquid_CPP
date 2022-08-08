@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug  8 18:59:34 2022
+# Make data base, printed on Mon Aug  8 19:27:20 2022
 
 # Variables
 
@@ -43,7 +43,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/nithin/learn/Solid2Liquid_CPP/part03
+CURDIR := /home/nithin/learn/Solid2Liquid_CPP/part04
 # makefile
 SHELL = /bin/sh
 # environment
@@ -56,6 +56,7 @@ CFLAGS = -I -Wall
 JOURNAL_STREAM = 8:54096
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+ 
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
@@ -107,13 +108,13 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 747871
+GIO_LAUNCHED_DESKTOP_FILE_PID = 772892
 # automatic
 %F = $(notdir $%)
 # environment
 DISPLAY = :0
 # environment
-PWD = /home/nithin/learn/Solid2Liquid_CPP/part03
+PWD = /home/nithin/learn/Solid2Liquid_CPP/part04
 # default
 .LOADED := 
 # environment
@@ -227,7 +228,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 747871
+VSCODE_PID = 772892
 # variable set hash-table stats:
 # Load=109/1024=11%, Rehash=0, Collisions=13/141=9%
 
@@ -237,7 +238,7 @@ VSCODE_PID = 747871
 
 # Directories
 
-# . (device 2053, inode 8676181): 12 files, no impossibilities.
+# . (device 2053, inode 8675391): 12 files, no impossibilities.
 
 # 12 files, no impossibilities in 1 directories.
 
@@ -259,14 +260,13 @@ all: my_visitor
 # Not a target:
 parser.cpp:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 visitor.hpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-08 12:37:23.010083597
+#  Last modified 2022-08-08 12:37:23.010083
 #  File has been updated.
 #  Successfully updated.
 
@@ -285,7 +285,7 @@ expression.cpp:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-08 16:08:28.208697589
+#  Last modified 2022-08-08 16:08:28.208697
 #  File has been updated.
 #  Successfully updated.
 
@@ -364,6 +364,7 @@ clean:
 main.o: main.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 12):
 	$(CC) $(CFLAGS) -c main.cpp
@@ -381,7 +382,7 @@ my_visitor: visitors.o expression.o parser.o main.o
 # Not a target:
 visitors.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-08 12:50:30.725793107
+#  Last modified 2022-08-08 12:50:30.725793
 #  File has been updated.
 #  Successfully updated.
 
@@ -399,6 +400,6 @@ visitors.cpp:
 # strcache performance: lookups = 48 / hit rate = 52%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=1/48=2%
-# Finished Make data base on Mon Aug  8 18:59:34 2022
+# Finished Make data base on Mon Aug  8 19:27:20 2022
 
  
