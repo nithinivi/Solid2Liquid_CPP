@@ -1,5 +1,5 @@
-#include "parser.h"
-#include "expression.h"
+#include "parser.hpp"
+#include "expression.hpp"
 #include <stdexcept>
 
 Lexer::Lexer(std::string expr) {
@@ -63,7 +63,6 @@ Token Lexer::getToken() {
     return token;
 }
 double Lexer::getNumber() { return number; }
-
 
 RDParser::RDParser(std::string string) : Lexer(string){};
 RDParser::~RDParser() {}

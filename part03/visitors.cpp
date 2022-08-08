@@ -1,5 +1,5 @@
-#include "expression.h"
-#include "visitor.h"
+#include "expression.hpp"
+#include "visitor.hpp"
 #include <limits>
 
 TreeEvalVisitor::TreeEvalVisitor(){};

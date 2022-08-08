@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Aug  5 16:05:41 2022
+# Make data base, printed on Mon Aug  8 16:07:04 2022
 
 # Variables
 
@@ -28,6 +26,8 @@ NODE_TLS_REJECT_UNAUTHORIZED = 0
 XDG_SESSION_CLASS = user
 # environment
 XDG_SESSION_TYPE = x11
+# makefile (from 'Makefile', line 4)
+TARGET = myprogram
 # environment
 NVM_INC = /home/nithin/.nvm/versions/node/v14.15.0/include/node
 # automatic
@@ -50,12 +50,14 @@ SHELL = /bin/sh
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/share/code/code
+# makefile (from 'Makefile', line 2)
+CFLAGS = -I -Wall
 # environment
 JOURNAL_STREAM = 8:54096
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# makefile
-MAKEFILE_LIST := 
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
 # environment
 JAVA_HOME = /home/nithin/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10
 # automatic
@@ -105,7 +107,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 213886
+GIO_LAUNCHED_DESKTOP_FILE_PID = 747871
 # automatic
 %F = $(notdir $%)
 # environment
@@ -125,7 +127,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/nithin
 # environment
-VSCODE_CODE_CACHE_PATH = /home/nithin/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /home/nithin/.config/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
 # environment
 LOGNAME = nithin
 # environment
@@ -150,6 +152,8 @@ MAKECMDGOALS := all
 QT_IM_MODULE = ibus
 # environment
 SHLVL = 0
+# makefile (from 'Makefile', line 1)
+CC = g++ 
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # default
@@ -157,7 +161,7 @@ MAKE_VERSION := 4.2.1
 # environment
 USER = nithin
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := all
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # environment
@@ -177,7 +181,7 @@ OLDPWD = /home/nithin
 # environment
 LANGUAGE = en_IN:en
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-a83023e6-1.69.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a83023e6-1.70.0-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -223,9 +227,9 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 213886
+VSCODE_PID = 747871
 # variable set hash-table stats:
-# Load=106/1024=10%, Rehash=0, Collisions=13/128=10%
+# Load=109/1024=11%, Rehash=0, Collisions=13/141=9%
 
 # Pattern-specific Variable Values
 
@@ -243,26 +247,99 @@ VSCODE_PID = 213886
 
 # Files
 
-# Not a target:
-all:
+all: myprogram
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+# Not a target:
+parser.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+visitor.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-08 12:37:23.010083597
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+expression.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  File does not exist.
+ 
+#  Last modified 2022-08-08 16:03:48.907129276
 #  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
 
 # Not a target:
-makefile:
-#  Implicit rule search has been done.
+parser.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+expression.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+visitors.o: visitors.cpp visitor.hpp
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
-#  Failed to be updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := visitors.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := visitors.cpp visitor.hpp
+# automatic
+# | := 
+# automatic
+# < := visitors.cpp
+# automatic
+# ^ := visitors.cpp visitor.hpp
+# automatic
+# ? := visitors.cpp visitor.hpp
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  recipe to execute (from 'Makefile', line 22):
+	$(CC) $(CFLAGS) -c visitors.cpp
+
+parser.o: parser.cpp parser.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	$(CC) $(CFLAGS) -c parser.cpp
 
 # Not a target:
 .DEFAULT:
@@ -270,28 +347,58 @@ makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-GNUmakefile:
-#  Implicit rule search has been done.
+myprogram: visitors.o expression.o parser.o main.o
+#  Implicit rule search has not been done.
 #  File does not exist.
- 
 #  File has been updated.
-#  Failed to be updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'Makefile', line 9):
+	$(CC) $(CFLAGS) main.o expression.o  parser.o visitors.o -o $(TARGET)
+
+expression.o: expression.cpp expression.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 16):
+	$(CC) $(CFLAGS) -c expression.cpp
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	$(RM) count *.o *~
+
+main.o: main.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 12):
+	$(CC) $(CFLAGS) -c main.cpp
+
+# Not a target:
+visitors.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-08 12:50:30.725793107
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# Load=17/1024=2%, Rehash=0, Collisions=0/46=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 186 B / avg = 9 B
-# current buf: size = 8162 B / used = 186 B / count = 19 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 219 B / avg = 9 B
+# current buf: size = 8162 B / used = 219 B / count = 22 / avg = 9 B
 
-# strcache performance: lookups = 22 / hit rate = 13%
+# strcache performance: lookups = 47 / hit rate = 53%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Fri Aug  5 16:05:41 2022
+# Load=22/8192=0%, Rehash=0, Collisions=1/47=2%
+# Finished Make data base on Mon Aug  8 16:07:04 2022
 
  

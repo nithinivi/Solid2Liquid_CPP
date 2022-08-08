@@ -3,9 +3,10 @@
 #include <iostream>
 #include <string>
 
-#include "expression.h"
-#include "visitor.h"
+#include "expression.hpp"
+#include "visitor.hpp"
 
+Expr::Expr() {}
 // Numeric constants implementations
 
 NumericConstant::NumericConstant(double value) { this->value = value; };

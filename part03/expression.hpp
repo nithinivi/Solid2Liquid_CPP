@@ -1,8 +1,7 @@
-
 #pragma once
 #ifndef DEBUG_H
 #define DEBUG_H
-#include "visitor.h"
+#include "visitor.hpp"
 
 enum OPERATOR { ILLEGAL = -1, PLUS, MINUS, MUL, DIV };
 
@@ -13,8 +12,6 @@ public:
     virtual ~Expr() = default;
     virtual double accept(IExprVisitor& expr_visitor) = 0;
 };
-
-Expr::Expr() {}
 
 class NumericConstant : public Expr {
 private:

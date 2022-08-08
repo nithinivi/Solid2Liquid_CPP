@@ -2,7 +2,7 @@
 #ifndef PARSER_H
 #define PARSER_H
 
-#include "expression.h"
+#include "expression.hpp"
 #include <string>
 
 enum Token {
