@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/nithin/learn/Solid2Liquid_CPP/part02'
+make: Leaving directory '/home/nithin/learn/Solid2Liquid_CPP/part02'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
