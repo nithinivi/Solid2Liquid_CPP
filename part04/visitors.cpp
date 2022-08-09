@@ -1,5 +1,6 @@
 #include "expression.hpp"
 #include "visitor.hpp"
+#include <iostream>
 #include <limits>
 
 double TreeEvalVisitor::visit(NumericConstant& num) { return num.getValue(); }
@@ -52,6 +53,8 @@ ItemList* FlattenVisitor::makeItemList(double num) {
 }
 
 double FlattenVisitor::visit(NumericConstant& num) {
+
+    std::cout << num.getValue() << std::endl;
     ItemList* itemList = FlattenVisitor::makeItemList(num.getValue());
     list->push_back(*itemList);
     return 0;

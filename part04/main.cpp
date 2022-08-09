@@ -15,17 +15,16 @@ std::list<ItemList>* flattenedExpr(std::string expr_string) {
 double evaluateItemLists(std::list<ItemList> lsrs) {
     std::stack<double>* stk = new std::stack<double>;
     for (ItemList itemList : lsrs) {
-        if (itemList.knd == Value) {
-
-            std::cout << itemList.value << std::endl;
+        if (itemList.knd == Value)
             stk->push(itemList.value);
 
-        } else {
+        else {
 
             double l = stk->top();
             stk->pop();
             double r = stk->top();
             stk->pop();
+
             switch (itemList.op) {
             case OPERATOR::PLUS:
                 stk->push(l + r);
@@ -51,7 +50,7 @@ double evaluateItemLists(std::list<ItemList> lsrs) {
 }
 
 int main(int argc, char* argv[]) {
-    std::string expr_string = "20/5*2+4";
+    std::string expr_string = "20";
 
     try {
         std::list<ItemList>* lrs = flattenedExpr(expr_string);

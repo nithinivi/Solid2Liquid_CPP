@@ -1,5 +1,0 @@
-make visitors.o --dry-run --keep-going --print-directory
-make: Entering directory '/home/nithin/learn/Solid2Liquid_CPP/part04'
-make: 'visitors.o' is up to date.
-make: Leaving directory '/home/nithin/learn/Solid2Liquid_CPP/part04'
- 

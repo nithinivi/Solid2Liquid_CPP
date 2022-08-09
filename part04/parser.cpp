@@ -1,5 +1,6 @@
 #include "parser.hpp"
 #include "expression.hpp"
+#include <iostream>
 #include <stdexcept>
 
 Lexer::Lexer(std::string expr) {
