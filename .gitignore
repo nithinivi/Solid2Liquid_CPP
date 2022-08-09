@@ -126,3 +126,4 @@ flycheck_*.el
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,visualstudiocode,linux,emacs
+part04/build/*
