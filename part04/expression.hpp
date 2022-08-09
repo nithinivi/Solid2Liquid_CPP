@@ -1,7 +1,7 @@
-#pragma once
+#include "visitor.hpp"
+
 #ifndef EXPRESSION_H
 #define EXPRESSION_H
-#include "visitor.hpp"
 
 enum OPERATOR { ILLEGAL = -1, PLUS, MINUS, MUL, DIV };
 

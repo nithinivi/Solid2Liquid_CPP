@@ -1,9 +1,5 @@
-make --dry-run --keep-going --print-directory
+make visitors.o --dry-run --keep-going --print-directory
 make: Entering directory '/home/nithin/learn/Solid2Liquid_CPP/part04'
-g++  -I -Wall -c visitors.cpp
-g++  -I -Wall -c expression.cpp
-g++  -I -Wall -c parser.cpp
-g++  -I -Wall -c main.cpp
-g++  -I -Wall main.o expression.o  parser.o visitors.o -o my_visitor
+make: 'visitors.o' is up to date.
 make: Leaving directory '/home/nithin/learn/Solid2Liquid_CPP/part04'
  

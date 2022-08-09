@@ -1,9 +1,8 @@
-#pragma once
-#ifndef PARSER_H
-#define PARSER_H
-
 #include "expression.hpp"
 #include <string>
+
+#ifndef PARSER_H
+#define PARSER_H
 
 enum Token {
     ILLEGAL_TOKEN = 0,

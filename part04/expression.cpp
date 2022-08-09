@@ -1,5 +1,3 @@
-// visitor pattern for processing composite
-
 #include <iostream>
 #include <string>
 

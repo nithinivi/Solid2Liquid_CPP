@@ -2,7 +2,6 @@
 #include "visitor.hpp"
 #include <limits>
 
-TreeEvalVisitor::TreeEvalVisitor(){};
 double TreeEvalVisitor::visit(NumericConstant& num) { return num.getValue(); }
 double TreeEvalVisitor::visit(BinaryExpr& bin) {
 
@@ -38,3 +37,33 @@ double TreeEvalVisitor::visit(UnaryExpr& bin) {
     }
     return std::numeric_limits<double>::quiet_NaN();
 }
+
+FlattenVisitor::FlattenVisitor() { this->list = new std::list<ItemList>; }
+
+ItemList* FlattenVisitor::makeItemList(OPERATOR op) {
+    ItemList* temp = new ItemList();
+    temp->setOperator(op);
+    return temp;
+}
+ItemList* FlattenVisitor::makeItemList(double num) {
+    ItemList* temp = new ItemList();
+    temp->setValue(num);
+    return temp;
+}
+
+double FlattenVisitor::visit(NumericConstant& num) {
+    ItemList* itemList = FlattenVisitor::makeItemList(num.getValue());
+    list->push_back(*itemList);
+    return 0;
+}
+double FlattenVisitor::visit(BinaryExpr& bin) {
+    double left = bin.getLeft().accept(*this);
+    double right = bin.getRight().accept(*this);
+    return 0;
+};
+double FlattenVisitor::visit(UnaryExpr& un) {
+    double exp = un.getExp().accept(*this);
+    ItemList* itemList = FlattenVisitor::makeItemList(un.getOp());
+    list->push_back(*itemList);
+    return 0;
+};

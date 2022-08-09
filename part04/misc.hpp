@@ -1,4 +1,4 @@
-#pragma once
+#include <stack>
 #ifndef MISC_H
 #define MISC_H
 #include "expression.hpp"
@@ -11,7 +11,7 @@ public:
     double value;
     OPERATOR op;
 
-    ItemList() { this->op = OPERATOR::ILLEGAL; };
+    ItemList() { this->op = ILLEGAL; };
 
     bool setOperator(OPERATOR op) {
         op = op;

@@ -7,6 +7,18 @@
         "ostream": "cpp",
         "system_error": "cpp",
         "type_traits": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "limits": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "new": "cpp",
+        "cstdint": "cpp",
+        "typeinfo": "cpp"
     }
 }
