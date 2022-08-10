@@ -50,7 +50,7 @@ double evaluateItemLists(std::list<ItemList> lsrs) {
 }
 
 int main(int argc, char* argv[]) {
-    std::string expr_string = "20";
+    std::string expr_string = "20/10";
 
     try {
         std::list<ItemList>* lrs = flattenedExpr(expr_string);

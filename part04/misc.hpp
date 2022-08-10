@@ -1,3 +1,4 @@
+#include <iostream>
 #include <stack>
 #ifndef MISC_H
 #define MISC_H
@@ -14,13 +15,13 @@ public:
     ItemList() { this->op = ILLEGAL; };
 
     bool setOperator(OPERATOR op) {
-        op = op;
+        this->op = op;
         knd = ExprKind::Operator;
         return true;
     };
 
-    bool setValue(double value) {
-        value = value;
+    bool setValue(double num) {
+        value = num;
         knd = ExprKind::Value;
         return true;
     };

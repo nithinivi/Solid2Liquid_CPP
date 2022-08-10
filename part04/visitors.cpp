@@ -47,6 +47,7 @@ ItemList* FlattenVisitor::makeItemList(OPERATOR op) {
     return temp;
 }
 ItemList* FlattenVisitor::makeItemList(double num) {
+
     ItemList* temp = new ItemList();
     temp->setValue(num);
     return temp;
@@ -54,14 +55,16 @@ ItemList* FlattenVisitor::makeItemList(double num) {
 
 double FlattenVisitor::visit(NumericConstant& num) {
 
-    std::cout << num.getValue() << std::endl;
     ItemList* itemList = FlattenVisitor::makeItemList(num.getValue());
+    // std::cout << itemList->value << std::endl;
     list->push_back(*itemList);
     return 0;
 }
 double FlattenVisitor::visit(BinaryExpr& bin) {
     double left = bin.getLeft().accept(*this);
     double right = bin.getRight().accept(*this);
+    ItemList* itemList = FlattenVisitor::makeItemList(bin.getOp());
+    list->push_back(*itemList);
     return 0;
 };
 double FlattenVisitor::visit(UnaryExpr& un) {
